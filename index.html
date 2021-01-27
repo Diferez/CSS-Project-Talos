@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/style.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="home">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="resources/home-bg.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="resources/home-bg-2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-container">
+                <h1>Genius Web & Talos Inc.</h1>
+                <h5>
+                    Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales.
+                </h5>
+                <h1> </h1>
+                <button id="transparentButton" href="#services">LEARN MORE</button>
+                <button class="cButton" href="#contact">CONTACT US</button>
+            </div>
+
+        </div>
+    </div>
+    </section>
+    <div class="navigation">
+        <h2>Talos</h2>
+        <div class="navButtons">
+
+            <button class="navButton" id="homeb" >HOME</button>
+
+            <button class="navButton" id="servicesb" href="#service">SERVICES</button>
+            <button class="navButton" id="aboutb" href="#about">ABOUT</button>
+            <button class="navButton" id="teamb" href="#team">TEAM</button>
+            <button class="navButton" id="portfoliob" href="#portfolio">PORTFOLIO</button>
+            <button class="navButton" id="blogb" href="#blog">BLOG</button>
+
+            <button class="navButton" id="contactb" href="#contact">CONTACT</button>
+
+        </div>
+        <div class="navMovil">
+            <button class="navButton" onclick="toggleMenu()">
+                <div class="nav-icon"></div>
+                <div class="nav-icon"></div>
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="movil-menu" id="movil-menu">
+        <button class="navButton" id="homem">HOME</button>
+        <button class="navButton" id="servicesm">SERVICES</button>
+        <button class="navButton" id="aboutm">ABOUT</button>
+        <button class="navButton" id="teamm">TEAM</button>
+        <button class="navButton" id="portfoliom">PORTFOLIO</button>
+        <button class="navButton" id="blogm"> BLOG</button>
+        <button class="navButton" id="contactm">CONTACT</button>
+    </div>
+
+    <!--Services section -->
+
+    <section class="services" id="services">
+        <div class="title">
+            <h1>What we do</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</h5>
+        </div>
+
+
+        <div class="service-info">
+            <div class="service-icon">
+                <span class="icon-laptop"></span>
+            </div>
+            <div class="service-content">
+                <h2>Brand Identity</h2>
+                <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+                </h5>
+            </div>
+        </div>
+
+        <div class="service-info">
+            <div class="service-icon">
+                <span class="icon-focus"></span>
+            </div>
+            <div class="service-content">
+                <h2>Web Design</h2>
+                <h5>You can easily changue icons by looking at ET Line Icons.
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+                </h5>
+            </div>
+        </div>
+
+        <div class="service-info">
+            <div class="service-icon">
+                <span class="icon-cloud"></span>
+            </div>
+            <div class="service-content">
+                <h2>Social Marketing</h2>
+                <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+                </h5>
+            </div>
+        </div>
+
+        <div class="service-info">
+            <div class="service-icon">
+                <span class="icon-basket"></span>
+            </div>
+            <div class="service-content">
+                <h2>CMS & eCommerce</h2>
+                <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+                </h5>
+            </div>
+        </div>
+
+    </section>
+
+    <!--About section -->
+    <section class="about" id="about">
+        <div class="about-info">
+            <h1>Genius Studio</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                sodales vitae elit massa. <br><br>
+                Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                sodales vitae elit massa.
+            </h5>
+        </div>
+        <div class="about-video">
+            <iframe class="about-video" src="https://www.youtube.com/embed/2ZKV6B03I0s" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--Team section -->
+    <section class="team" id="team">
+        <div class="team-title">
+            <h1>Team members</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</h5>
+        </div>
+
+        <div class="member">
+            <div class="member-img-container">
+                <img src="resources/team_1.jpg" alt="Avatar" class="image">
+                <div class="member-social">
+                    <span>
+                        <h2 class="icon-facebook"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-twitter"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-linkedin"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-googleplus"></h2>
+                    </span>
+                </div>
+            </div>
+            <div class="member-info">
+                <h2>Jonathan Doe</h2>
+                <h4>Designer</h4>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="member-img-container">
+                <img src="resources/team_2.jpg" alt="Avatar" class="image">
+                <div class="member-social">
+                    <span>
+                        <h2 class="icon-facebook"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-twitter"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-linkedin"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-googleplus"></h2>
+                    </span>
+                </div>
+            </div>
+            <div class="member-info">
+                <h2>Jenny L Martian</h2>
+                <h4>UX Designer</h4>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="member-img-container">
+                <img src="resources/team_3.jpg" alt="Avatar" class="image">
+                <div class="member-social">
+                    <span>
+                        <h2 class="icon-facebook"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-twitter"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-linkedin"></h2>
+                    </span>
+                    <span>
+                        <h2 class="icon-googleplus"></h2>
+                    </span>
+                </div>
+            </div>
+            <div class="member-info">
+                <h2>James David Doe</h2>
+                <h4>Creative Director</h4>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Portfolio section -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-title">
+            <h1>Latest Work</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</h5>
+        </div>
+        <div class="portfolio-img" id="image1">
+            <div class="portfolio-img-container">
+                <div class="portfolio-img-txt">
+                    <span class="portfolio-icon">
+                        <h2 class="icon-attachment"></h2>
+                    </span>
+                    <h2>Illustration</h2>
+                    <h5>Graphic / Illustration / Poster</h5>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-img" id="image2">
+            <div class="portfolio-img-container">
+                <div class="portfolio-img-txt">
+                    <span class="portfolio-icon">
+                        <h2 class="icon-attachment"></h2>
+                    </span>
+                    <h2>Illustration</h2>
+                    <h5>Graphic / Illustration / Poster</h5>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-img" id="image3">
+            <div class="portfolio-img-container">
+                <div class="portfolio-img-txt">
+                    <span class="portfolio-icon">
+                        <h2 class="icon-attachment"></h2>
+                    </span>
+                    <h2>Illustration</h2>
+                    <h5>Graphic / Illustration / Poster</h5>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-img" id="image4">
+            <div class="portfolio-img-container">
+                <div class="portfolio-img-txt">
+                    <span class="portfolio-icon">
+                        <h2 class="icon-attachment"></h2>
+                    </span>
+                    <h2>Illustration</h2>
+                    <h5>Graphic / Illustration / Poster</h5>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-img" id="image5">
+            <div class="portfolio-img-container">
+
+                <div class="portfolio-img-txt">
+                    <span class="portfolio-icon">
+                        <h2 class="icon-attachment"></h2>
+                    </span>
+                    <h2>Illustration</h2>
+                    <h5>Graphic / Illustration / Poster</h5>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-img" id="image6">
+            <div class="portfolio-img-container">
+                <div class="portfolio-img-txt">
+                    <span class="portfolio-icon">
+                        <h2 class="icon-attachment"></h2>
+                    </span>
+                    <h2>Illustration</h2>
+                    <h5>Graphic / Illustration / Poster</h5>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Blog section -->
+    <section class="blog" id="blog">
+
+        <div class="blog-title">
+            <h1>Our Blog</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</h5>
+        </div>
+
+        <div class="blog-post" id="blog1">
+            <div class="post-date">
+                <h4>Online Bussiness / Dec 9, 2016</h4>
+            </div>
+            <div class="post-content">
+                <h3>The best way to make Online Bussiness</h3>
+            </div>
+            <div class="post-owner">
+                <h4>by Jonathan Doe</h4>
+            </div>
+        </div>
+
+        <div class="blog-post" id="blog2">
+            <div class="post-date">
+                <h4>Frontend Dev / Dec 9, 2016</h4>
+            </div>
+            <div class="post-content">
+                <h3>Frontend Developer vs UI Designer</h3>
+            </div>
+            <div class="post-owner">
+                <h4>by Johnny James</h4>
+            </div>
+        </div>
+
+        <div class="blog-post" id="blog3">
+            <div class="post-date">
+                <h4>Social Marketing / Dec 9, 2016</h4>
+            </div>
+            <div class="post-content">
+                <h3>What is Social Marketing Business </h3>
+            </div>
+            <div class="post-owner">
+                <h4>by Mary Louis</h4>
+            </div>
+        </div>
+
+        <div class="blog-post" id="blog4">
+            <div class="post-date">
+                <h4>Web Design / Dec 9, 2016</h4>
+            </div>
+            <div class="post-content">
+                <h3>How to become Web Designer</h3>
+            </div>
+            <div class="post-owner">
+                <h4>by David Jenn</h4>
+            </div>
+        </div>
+
+
+    </section>
+    <!--Questions section -->
+    <section class="questions">
+        <div class="questions-title">
+            <h1>Asked Questions</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</h5>
+        </div>
+
+
+        <div id="accordionExample" class="accordion shadow">
+
+            <!-- Accordion item 1 -->
+            <div class="card">
+                <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne"
+                            class="btn btn-link text-dark font-weight-bold collapsible-link">
+                            <div class="acordion-container">
+                                <div class="service-icon">
+                                    <span class="icon-laptop"></span>
+                                </div>
+                                <h2>How to make Brand Identity?</h2>
+                            </div>
+
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
+                    class="collapse show">
+                    <div class="card-body p-5">
+                        <p class="font-weight-light m-0">
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                            wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                            sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+                            imperdiet. <br>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                        </p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+            <!-- Accordion item 2 -->
+            <div class="card">
+                <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo"
+                            class="btn btn-link text-dark font-weight-bold collapsible-link">
+                            <div class="acordion-container">
+                                <div class="service-icon">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <h2>What is Web Design?</h2>
+                            </div>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                        <p class="font-weight-light m-0">
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                            wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                            sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+                            imperdiet. <br>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                        </p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+            <!-- Accordion item 3 -->
+            <div class="card">
+                <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree"
+                            class="btn btn-link text-dark font-weight-bold collapsible-link">
+                            <div class="acordion-container">
+                                <div class="service-icon">
+                                    <span class="icon-cloud"></span>
+                                </div>
+                                <h2>Why is Important Social Marketing?</h2>
+                            </div>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                        <p class="font-weight-light m-0">
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                            wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                            sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+                            imperdiet. <br>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                        </p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+        </div><!-- End -->
+    </section>
+    <!--Testimonial section -->
+    <section class="testimonial">
+        <div class="testimonial-title">
+            <h1>Testimonial Words</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</h5>
+        </div>
+
+        <div class="testimonial-post" id="test1">
+            <div class="testimonial-img-container">
+                <img src="resources/testimonial-img3.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="testimonial-info">
+                <h6>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                    sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                </h6>
+                <div class="testimonial-author">
+                    <h4>
+                        James Author
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonial-post" id="test2">
+            <div class="testimonial-img-container">
+                <img src="resources/testimonial-img1.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="testimonial-info">
+                <h6>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                    sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                </h6>
+                <div class="testimonial-author">
+                    <h4>
+                        John Doe
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="testimonial-post" id="test3">
+            <div class="testimonial-img-container">
+                <img src="resources/testimonial-img2.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="testimonial-info">
+                <h6>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet,
+                    wisi risus purus augue vulputate voluptate neque, curabitur dolor libero
+                    sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                </h6>
+                <div class="testimonial-author">
+                    <h4>
+                        Mary Jane
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dot-container" style="text-align:center" id="dot-desk">
+            <span class="dot" onclick="currentTest(1)"></span>
+            <span class="dot" onclick="currentTest(2)"></span>
+            <span class="dot" onclick="currentTest(3)"></span>
+        </div>
+
+        <div class="dot-container" style="text-align:center" id="dot-movil">
+            <span class="dot" onclick="currentTestMov(1)"></span>
+            <span class="dot" onclick="currentTestMov(2)"></span>
+            <span class="dot" onclick="currentTestMov(3)"></span>
+        </div>
+
+    </section>
+
+    <!--Contact section -->
+    <section class="contact" id="contact">
+        <div class="contact-title">
+            <h1>Get in touch</h1>
+            <h5>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</h5>
+        </div>
+        <form action="/action_page.php" id="form">
+            <div class="form-container">
+                <input type="text" class="form-input" placeholder="Name">
+                <textarea name="" id="texta" cols="" rows="" class="form-input"
+                    placeholder="Message"></textarea></textarea>
+                <input type="email" name="" id="" class="form-input" placeholder="Email">
+                <input type="tel" class="form-input" placeholder="Phone">
+
+                <input type="submit" value="SHOOT MESSAGE" class="subm cButton">
+
+            </div>
+
+
+        </form>
+    </section>
+
+    <!--Footer section -->
+    <section class="footer">
+        <h5>
+            Copyrigth © Talos HTML Template | All Rigths Reserved.
+        </h5>
+        <div class="footer-social">
+            <span>
+                <h2 class="icon-facebook"></h2>
+            </span>
+            <span>
+                <h2 class="icon-twitter"></h2>
+            </span>
+            <span>
+                <h2 class="icon-dribbble"></h2>
+            </span>
+            <span>
+                <h2 class="icon-linkedin"></h2>
+            </span>
+            <span>
+                <h2 class="icon-rss"></h2>
+            </span>
+            <span>
+                <h2 class="icon-googleplus"></h2>
+            </span>
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
