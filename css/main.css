@@ -66,7 +66,7 @@ body {
 
 @media (max-width: 576px){
     .gray-text{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -75,7 +75,7 @@ body {
 /*////////////////////////*/
 
 .carousel-container {
-    width: 100%;
+    width: 100vw;
     top: 35%;
     position: absolute;
     color:  var(--white);
@@ -131,20 +131,30 @@ body {
     
     .carousel-button {
         font-size: 1rem;
+        height: 3rem;
+        width: 11rem;
     }
+
 }
 
 @media (max-width: 576px){
     .carousel-container {
-        top: 20%;
+        top: 15%;
     }
+
     .carousel-container p{
-        font-size: 1.1rem;
-        margin-bottom: 6%;
+        font-size: 1rem;
+        margin-bottom: 3%;
+    }
+
+    .carousel-container h1{
+        font-size: 2rem;
     }
     .carousel-button {
-        width: 13rem;
+        width: 10rem;
+        height: 3rem;
     }
+
 }
 
 /*////////////////////////*/
@@ -152,7 +162,7 @@ body {
 /*////////////////////////*/
 
 .navigation{
-    width: 100%;
+    width: 100vw;
     display: flex;
     position: sticky;
     flex-flow: wrap;
@@ -258,6 +268,7 @@ body {
 /*////////////////////////*/
 
 .services{
+    width: 100vw;
     height: 90vh;
     display: grid;
     grid-template-columns: 49% 49%;
@@ -313,6 +324,7 @@ body {
 
 .about {
     background-color: var(--smoke);
+    width: 100vw;
     height: 70vh;
     display: grid;
     grid-template-columns: 43% 52%;
@@ -349,14 +361,16 @@ body {
 
 @media (max-width: 576px){
     .about{
+        height: 120vh;
         grid-template-columns: 100%;
+        grid-template-rows: 70vh 40vh;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .about-video{
-        height: 300px;
-        width: 480px;
+        height: 250px;
+        width: 380px;
     }
 }
 
@@ -398,6 +412,7 @@ body {
 .member .name{
     font-size: 2rem;
     margin: 0%;
+    font-weight: 900;
 }
 
 .member .job{
@@ -566,7 +581,7 @@ body {
 @media (max-width: 576px){
     .portfolio{
         grid-template-columns: 100%;
-        height: 400vh;
+        height: 430vh;
         padding: 5%;
         grid-template-rows: 30vh repeat(6, 60vh);
         padding-bottom: 10%;
@@ -648,20 +663,60 @@ body {
     font-size: 1.5rem;
 }
 
-/*Questions section */
+@media (max-width: 768px){
+    .blog {
+
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 140vh;
+        grid-template-columns: 37% 37%;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        padding-bottom: 0%;
+    }
+    .blog1,
+    .blog2{
+        grid-column: 1/-1;
+    }
+
+    .questions{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .post-date {
+        font-size: 1.1rem;
+    }
+    .post-owner{
+        font-size: 1.1rem;
+    }
+    .post-content{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px){
+    .blog {
+        grid-template-columns: 100%;
+        height: 190vh;
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh;
+        padding: 5%;
+    }
+}
+
+/*////////////////////////*/
+/*///Questions section////*/
+/*////////////////////////*/
+
 .questions {
     width: 100vw;
     display: grid;
     background-color: whitesmoke;
     grid-template-columns: auto;
     grid-template-rows: 30vh;
-
     padding-left: 10%;
     padding-right: 10%;
     column-gap: 5%;
     row-gap: 3%;
     padding-bottom: 10%;
-
 }
 
 .btn-link:hover,
@@ -679,8 +734,9 @@ body {
     display: flex;
     align-items: center;
 }
-.acordion-container h2{
+.acordion-container h3{
     margin-left: 2%;
+    font-weight: 900;
 }
 
 .collapsible-link {
@@ -696,20 +752,47 @@ body {
     right: 0.8rem;
     transform: translateY(-50%);
     display: block;
-    font-size: 1.1rem;
-}
 
+}
 
 .collapsible-link::before {
     content: '';
 }
+
 .card-header{
     height: 10vh;
 }
 
-/*Testimonial section */
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 576px){
+    .questions {
+        width: 100vw;
+    }
+    .accordion {
+        margin-bottom: 20%;
+    }
+    .card-header{
+        height: 12vh;
+    }
+    .acordion-container h2{
+        font-size: 1.4rem;
+        padding-left: 5%;
+    }
+    .acordion-container .service-icon{
+        font-size: 2rem;
+    }
+}
+
+/*////////////////////////*/
+/*//Testimonial section///*/
+/*////////////////////////*/
+
 .testimonial{
     width: 100vw;
+    height: 100vh;
     display: grid;
     background-color: white;
     grid-template-columns: 45% 45%;
@@ -735,14 +818,14 @@ body {
     grid-template-columns: 20% 80%;
 }
 .rounded-circle{
-    height: 5rem;
+    height: 9vh;
 }
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: rgb(177, 247, 200);
+    background-color: var(--green);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -753,7 +836,7 @@ body {
 }
 .dot-container{
     grid-column: 1/-1;
-    z-index: 100;
+
 }
 .active, .dot:hover {
     background-color: #64f7ad;
@@ -762,18 +845,71 @@ body {
 .test3{
     display: none;
 }
-/*Contact section */
+
+@media (max-width: 768px){
+    .testimonial{
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 90vh;
+    }
+    .testimonial-post{
+
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+    }
+    .rounded-circle{
+        height: 4rem;
+    }
+    .test3{
+        display: none;
+    }
+    .contact{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 576px){
+    .testimonial {
+        height: 80vh;
+        grid-template-columns: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .testimonial-post{
+        grid-template-columns: 20% 80%;
+        column-gap: 3%;
+    }
+    .test2{
+        display: none;
+    }
+    .test3{
+        display: none;
+    }
+    .dot-desk{
+        display: none;
+    }
+    .dot-mobile{
+        display: block;
+    }
+}
+
+/*////////////////////////*/
+/*////Contact section/////*/
+/*////////////////////////*/
+
 .contact {
+    height: 90vh;
     display: grid;
-    background-color: whitesmoke;
+    background-color: var(--smoke);
     width: 100vw;
     grid-template-rows: 30vh auto;
     grid-template-columns: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    column-gap: 3%;
     padding-bottom: 10%;
-
+    column-gap: 3%;
     justify-content: center;
     overflow: hidden;
 }
@@ -790,7 +926,7 @@ body {
     width: 100%;
     padding-top: 5%;
     position: relative;
-    z-index: 100;
+
     justify-content: center;
     display: grid;
     grid-template-columns: 40% 40%;
@@ -799,7 +935,7 @@ body {
     row-gap: 3%;
     padding-bottom: 5%;
 }
-.form-container #texta{
+.form-container .texta{
     grid-column: 2;
     grid-row: 1/4;
 }
@@ -808,7 +944,7 @@ body {
     
     grid-column: 1/-1;
     width: 50%;
-    height: 60%;
+    height: 80%;
     position: relative;
     justify-self: center;
     font-weight: 500;
@@ -824,118 +960,22 @@ body {
     padding-left: 3%;
     width: 100%;
 }
-/*General */
-
-/*Footer section */
-.footer{
-    background-color: white;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    row-gap: 5%;
-    height: 20vh;
-    padding-bottom: 0%;
-    width: 100vw;
-}
-.footer-social{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-}
 
 @media (max-width: 768px){
-    /*Blog section */
-    .blog {
-
-        padding-left: 5%;
-        padding-right: 5%;
-        height: 170vh;
-        grid-template-columns: 37% 37%;
-        grid-template-rows: 30vh 15% 15% 15%;
-        padding-bottom: 0%;
-    }
-    #blog1,
-    #blog2{
-        grid-column: 1/-1;
-    }
-
-    .questions{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    /*Testimonial section */
-    .testimonial{
-        padding-left: 5%;
-        padding-right: 5%;
-        height: 80vh;
-    }
-    .testimonial-post{
-
-        display: grid;
-        grid-template-columns: 30% 70%;
-
-    }
-    .rounded-circle{
-        height: 4rem;
-    }
-
-    .contact{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    /*Contact section */
     .form-input{
         padding: 5%;
+    }
+
+    .subm{
+        display: block;
+        grid-row: 5;
+        grid-column: 100%;
+        width: 100%;
+        height: 3rem;
     }
 }
 
 @media (max-width: 576px){
-    /*Blog section */
-    .blog {
-        width: 100vw;
-        grid-template-columns: 100%;
-        grid-template-rows: 30vh 15% 15% 15% 15%;
-        padding: 5%;
-    }
-
-    /*Questions section */
-    .questions {
-        width: 100vw;
-    }
-
-    .card-header{
-        height: 12vh;
-    }
-    .acordion-container h2{
-        font-size: 1.6rem;
-        padding-left: 5%;
-    }
-    .acordion-container .service-icon{
-        font-size: 2rem;
-    }
-
-    /*Testimonial section */
-    .testimonial {
-        height:80vh;
-        grid-template-columns: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .testimonial-post{
-        grid-template-columns: 15% 75%;
-        column-gap: 3%;
-    }
-    .test2{
-        display: none;
-    }
-    .dot-desk{
-        display: none;
-    }
-    .dot-mobile{
-        display: block;
-    }
-    /*Contact section */
     .contact{
         padding-left: 3%;
         padding-right: 3%;
@@ -948,22 +988,40 @@ body {
     }
     
 
-    .form-container #texta{
+    .form-container .texta{
         grid-column: auto;
         grid-row: 4;
         height: 10rem;
         padding-top: 3%;
     }
     
-    .subm{
-        display: block;
-        grid-row: 5;
-        grid-column: auto;
-        width: 100%;
-        height: 3rem;
-    }
+
+}
+
+/*Footer section */
+.footer{
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 5%;
+    height: 20vh;
+    padding-bottom: none;
+    width: 100vw;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 576px){
     /*Footer section */
     .footer{
-
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
 }
